@@ -1,26 +1,23 @@
-# SCYTHE <img width="24" height="24" alt="icon" src="https://fkerimk.com/scythe/icon.png" /> build
+# SCYTHE <img width="24" height="24" alt="icon" src="https://fkerimk.com/scythe/icon.png" /> lib
 
-Simple scripts for building the Scythe.
-
-> [!CAUTION]  
-> Support for the Windows is partially available, and almost everything is compatible.
-However, the build script is outdated and has not been tested yet.
-Do not take a build on Windows.
-
-> [!NOTE]  
-> Cross-platform builds can be made from both operating systems.
-You can take a Windows build directly from Linux.
+Common Scythe library for the util, core, and run modules.
 
 ## 🛠 License
 
-scythe-build is licensed under the [LGPL-2.1 license](./LICENSE).
+scythe-lib is licensed under the [LGPL-2.1 license](./LICENSE).
 
 ## Building
 
-Make sure you have the .NET 10 SDK packages installed.
+Make sure you have .NET 3.0 SDK or higher installed
 
 ```bash
-./build/build.sh
+git clone https://github.com/fkerimk/scythe-lib.git
+cd ./scythe-lib/
+dotnet publish -v q -c Release
+cd ..
 ```
 
-More details are available in the [Scythe](https://github.com/fkerimk/scythe) repo.
+The build will be at the `./scythe-lib/bin/Release/netstandard2.1/publish/scythe-lib.dll`.
+
+
+You can take an automatic build using the [scythe-build](https://github.com/fkerimk/scythe-build) module.
