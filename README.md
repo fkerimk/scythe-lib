@@ -12,12 +12,11 @@ Make sure you have .NET 3.0 SDK or higher installed
 
 ```bash
 git clone https://github.com/fkerimk/scythe-lib.git
-cd ./scythe-lib/
+cd scythe-lib
 dotnet publish -v q -c Release
 cd ..
 ```
 
-The build will be at the `./scythe-lib/bin/Release/netstandard2.1/publish/scythe-lib.dll`.
-
+The build will be at the `scythe-lib/bin/Release/netstandard2.1/publish/scythe-lib.dll`.
 
 You can take an automatic build using the [scythe-build](https://github.com/fkerimk/scythe-build) module.
